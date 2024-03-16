@@ -1,0 +1,70 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height:1.8em;
+    color:#666;
+    }
+
+    .pimg1, .pimg2, .pimg3{
+        position:relative;
+opacity:0.70;
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;
+
+/*
+fixed = parallax
+scroll= normal
+*/
+background-attachment:fixed;
+    }
+    .pimg1{
+        
+            background-image: url('https://cdn.discordapp.com/attachments/1134158940838564000/1218636984931717222/SpaceShip.png?ex=66086322&is=65f5ee22&hm=0d756f71d20d95b741cabd7e53caf2e887da92febaa66b2f966e4741631b3078&');
+            min-height:100%;
+    }
+    .pimg2{
+        background-image: url('https://cdn.discordapp.com/attachments/1134158940838564000/1218669175132651530/work-in-progress-wallpaper-preview.png?ex=6608811d&is=65f60c1d&hm=86cf70188ccc07a00a2b4ed245d40c4bc1824abfe88561137f212e50b69578c9&');
+            min-height:60%;
+        }
+        .pimg3{
+            background-image: url('https://cdn.discordapp.com/attachments/1134158940838564000/1218669431941500989/code-letters-screen-blur-multi-colored-labels-words-text-sw1lfc92pm6v67bh.png?ex=6608815a&is=65f60c5a&hm=02c88d5a62405007c6c3e97d697fc8559563181d430735490b389a4de145765e&');
+    min-height:60%;
+            }
+            .section{
+                text-align:center;
+                padding:50px 80px;
+                }
+                .section-light{
+                    background-color: #f4f4f4;
+                    color:#666;
+                    }
+                    .section-dark{
+                    background-color:#282e34;
+                    color:#ddd;
+                    }
+                    .ptext{
+                        position:absolute;
+                        top:50%;
+                        width:100%;
+                        text-align:center;
+                        color:#000;
+                        font-size:27px;
+                        letter-spacing:8px;
+                        text-transform:uppercase;
+                        }.ptext .border{
+                            background-color: #111;
+                            color:#fff;
+                            padding: 20px;
+                        }
+                        .ptext .border.trans{
+                            background-color:transparent
+                            }
+                            @media(max-width:568px){
+                                .pimg1, .pimg2, .pimg3{
+                                background-attachment:scroll;
+                                }
+                            }
